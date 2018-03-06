@@ -1,0 +1,109 @@
+//Sizes
+$size0 : 0.2em;
+$size1 : 0.3em;
+$size2 : 0.5em;
+$size3 : 1em;
+$size4 : 2em;
+//Positions
+$NonePosition: none;
+$centerPosition: center;
+$inlineFlexPosition: inline-flex;
+$flexPosition: flex;
+//Design
+$solidDesign: solid;
+
+//Mixins
+@mixin format($width, $marginRight, $marginLeft, $borderStyle, $borderRadius){
+    width: $width;  
+    margin-right: $marginRight;
+    margin-left: $marginRight;  
+    border-style: $solidDesign;
+    border-radius: $size2;
+}
+
+//Extends
+%borders{
+    border-style: $solidDesign;
+    border-radius: $size2;
+}
+
+section{
+    @include format(70%, $size0, $size4, $solidDesign, $size2);    
+    p{
+        padding-left: $size4;
+        padding-right: $size4;
+    }
+}
+
+@import 'import';
+
+aside{
+    @include format(30%, $size4, $size0, $solidDesign, $size2);    
+    h4, img{
+        padding-left: $size3;
+    }    
+    svg{
+        padding-left: $size4;
+    }
+}
+
+main{
+    display: $inlineFlexPosition;
+}
+
+nav{
+    display: $flexPosition;  
+    margin-bottom: $size4;  
+    margin-right: $size4;
+    margin-left: $size4;
+    @extend %borders;
+    a{
+        @extend %borders;
+        color: black;    
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;    
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    ul:nth-of-type(1){
+        padding-right: 2; 
+    }
+    ul:nth-of-type(2){
+        padding: 0; 
+    }
+    ul:nth-of-type(3){
+        padding: 0;         
+    }
+}
+
+footer{
+    h2{
+        padding: 0;
+    margin: 0;
+    }
+    nav{
+        display: $flexPosition;
+        border-style: $NonePosition; 
+        a{
+            border-style: $NonePosition;
+        }
+        a:link{
+            color: #3366CC; text-decoration: underline;
+        }
+        a:visited{
+            color: #3366CC; text-decoration: underline;
+        }
+    }
+}
+
+.backgroungGray{
+    background-color: lightgray;
+}
+a:link { color: #000000; text-decoration: $NonePosition}
+a:visited { color: #000000; text-decoration: $NonePosition}
+a:hover { color: #3366CC; text-decoration: underline}
+a:active { color: #000000; text-decoration: $NonePosition}
+
+.container{
+    display: $flexPosition;
+}
