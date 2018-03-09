@@ -19,7 +19,7 @@ $mobilesize: "screen and (max-width: 600px)";
 @mixin format($width, $marginRight, $marginLeft, $borderStyle, $borderRadius){
     width: $width;  
     margin-right: $marginRight;
-    margin-left: $marginRight;  
+    margin-left: $marginLeft;  
     border-style: $solidDesign;
     border-radius: $size2;
 }
@@ -98,14 +98,6 @@ footer{
         }
     }
 }
-
-html{
-    background: lightcyan;
-    @media #{$mobilesize}{
-        background: lightblue;
-    }
-}
-
 
 .backgroungGray{
     background-color: lightgray;

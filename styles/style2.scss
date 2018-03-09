@@ -52,14 +52,9 @@ main{
         float: right;
         margin-right: 2em;
     }
-}
-
-table thead{
-    background-color: gray;
-}
-
-table tr:nth-child(even){
-    background-color: lightgray;
+    article:nth-of-type(2){
+        display: none;
+    }
 }
 
 nav{
@@ -143,6 +138,12 @@ a:active { color: #000000; text-decoration: $NonePosition}
             margin-right: auto;
             float: none;
 
+        }
+        article:nth-of-type(1){
+            display: none;
+        }
+        article:nth-of-type(2){
+            display: block;
         }
     }
     

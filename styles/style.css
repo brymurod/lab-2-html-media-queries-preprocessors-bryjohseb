@@ -5,7 +5,7 @@ nav, nav a {
 section {
   width: 70%;
   margin-right: 0.2em;
-  margin-left: 0.2em;
+  margin-left: 2em;
   border-style: solid;
   border-radius: 0.5em; }
   section p {
@@ -24,7 +24,7 @@ h2 {
 aside {
   width: 30%;
   margin-right: 2em;
-  margin-left: 2em;
+  margin-left: 0.2em;
   border-style: solid;
   border-radius: 0.5em; }
   aside h4, aside img {
@@ -68,12 +68,6 @@ footer nav {
   footer nav a:visited {
     color: #3366CC;
     text-decoration: underline; }
-
-html {
-  background: lightcyan; }
-  @media screen and (max-width: 600px) {
-    html {
-      background: lightblue; } }
 
 .backgroungGray {
   background-color: lightgray; }
@@ -125,7 +119,7 @@ a:active {
   section {
     width: 100%;
     margin-right: 0.2em;
-    margin-left: 0.2em;
+    margin-left: 2em;
     border-style: solid;
     border-radius: 0.5em; }
     section p:nth-of-type(2) {
@@ -135,7 +129,7 @@ a:active {
   aside {
     width: 100%;
     margin-right: 0.2em;
-    margin-left: 0.2em;
+    margin-left: 2em;
     border-style: solid;
     border-radius: 0.5em; }
     aside article h4 {

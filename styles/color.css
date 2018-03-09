@@ -1,0 +1,17 @@
+body {
+  background-color: lightblue; }
+
+nav {
+  background-color: lightseagreen; }
+
+section, aside {
+  background-color: lightgray; }
+
+table {
+  background-color: lightcyan; }
+
+table thead {
+  background-color: lightpink; }
+
+table tr:nth-child(even) {
+  background-color: lightgray; }

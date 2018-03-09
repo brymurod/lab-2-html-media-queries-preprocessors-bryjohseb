@@ -1,0 +1,29 @@
+//Variables for color
+$lightBlue: lightblue;
+$lightSeaGreen: lightseagreen;
+$lightGray: lightgray;
+$lightCyan: lightcyan;
+
+
+body{
+    background-color: $lightBlue;
+}
+
+nav{
+    background-color: $lightSeaGreen
+}
+
+section , aside{
+    background-color: $lightGray;
+}
+table{
+    background-color: $lightCyan;
+}
+
+table thead{
+    background-color: lightpink;
+}
+
+table tr:nth-child(even){
+    background-color: lightgray;
+}
