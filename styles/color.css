@@ -11,7 +11,7 @@ table {
   background-color: lightcyan; }
 
 table thead {
-  background-color: lightsalmon; }
+  background-color: lightcoral; }
 
 table tr:nth-child(even) {
   background-color: lightsalmon; }

@@ -4,6 +4,7 @@ $lightSeaGreen: lightseagreen;
 $lightGray: lightgray;
 $lightCyan: lightcyan;
 $lightSalmon: lightsalmon;
+$lightCoral: lightcoral;
 
 
 body{
@@ -22,7 +23,7 @@ table{
 }
 
 table thead{
-    background-color: $lightSalmon;
+    background-color: $lightCoral;
 }
 
 table tr:nth-child(even){
